@@ -210,8 +210,8 @@ function quizClicked(){
     n2h=answer_shuffle[4];
     numToHTML();
     
-    buf = document.getElementById("quiz-rw");
-    buf.innerHTML = quiz_shuffle[0]+", "+quiz_shuffle[1]+", "+quiz_shuffle[2]+", "+quiz_shuffle[3]+", "+quiz_shuffle[4];
+    //buf = document.getElementById("quiz-rw");
+    //buf.innerHTML = quiz_shuffle[0]+", "+quiz_shuffle[1]+", "+quiz_shuffle[2]+", "+quiz_shuffle[3]+", "+quiz_shuffle[4];
 
     last_answer = prefecturalCapital[quiz_shuffle[step-1]].answer01
     
