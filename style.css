@@ -1,0 +1,126 @@
+.inner-block {
+  position: relative;
+  width: calc(100% - 6vw);
+  margin: 0 auto;
+  max-width: 1000px;
+  background-color: #e8f0ff
+}
+
+
+.quiz {
+  max-height: 2000vh;
+  padding: 6vw 0;
+  background: rgb(19,51,177);
+}
+ /*
+.quiz-content {
+  background-color: rgba(#fff, 0.4);
+  box-shadow: 2px 2px 4px rgba($color: #000, $alpha: 0.1);
+  position: relative;
+}*/
+
+ 
+.quiz-question-number {
+  text-align: center;
+  font-size: 3vh;
+  font-weight: bold;
+  border-bottom: 3px solid rgb(19,51,177);
+  padding: 5px;
+}
+
+.quiz-question {
+  font-size: 4vh;
+  font-weight: bold;
+  line-height: 1;
+  margin-bottom: 40px;
+  position: relative;
+  text-align: center;
+  padding: 30px 0px 0px;
+}
+
+
+ 
+.quiz-answer {
+  display: grid;
+  position: relative;
+  gap: 2vh;
+  padding: 0px 2vh 10vh;
+}
+
+
+.quiz-button{
+    text-align: center;
+    color: black;
+    /*font-family: "toppan-bunkyu-midashi-go-std", sans-serif;*/
+    
+    background: rgba(255, 255, 255, 0.6);
+    font-size: 2.5vh;
+    
+    color: rgb(19,51,177);
+    display: block;
+    margin: 0.4vh auto;
+    align-items: center;
+    padding: 2vw 10vw 2vw 10vw;
+    font-weight: bold;
+    border-radius: 2vw;
+        
+    transition: all 0.1s 0s linear;
+}
+
+.quiz-button:hover{
+    color: #4080ff;
+    background: #6662
+}
+/*
+.quiz-right{
+
+  position: absolute;
+  top: calc(10vh + 200px);
+  left: calc(50% - 70px);
+  
+
+  width: 100px;
+  height: 100px;
+  text-align:center;
+  line-height: 80px;
+  border-radius: 50%;
+  border: solid 20px #f39d;
+  
+  margin: 0vw auto;
+  
+  
+}
+
+.quiz-wrong{
+  position: absolute;
+  top: calc(10vh + 210px);
+  left: calc(50% - 75px);
+  
+  width: 150px;
+  height: 20px;
+  background: #335d;
+  transform: rotate(45deg);
+  vertical-align: middle;
+  margin: 6vw auto;
+}
+
+.quiz-wrong::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #335d;
+  transform: rotate(90deg);
+}*/
+
+.quiz-rw{
+  position: relative;
+
+  height: 80px;
+  padding: 2vw 10vw 2vw 10vw;
+  background: #fff;
+  
+  
+}
