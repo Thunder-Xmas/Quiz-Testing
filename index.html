@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width">
+
+    <title>クイズ</title>
+
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <script src="index.js"></script>
+    
+    <script>
+    (function(d) {
+      var config = {
+        kitId: 'oya7jtn',
+        scriptTimeout: 3000,
+        async: true
+      },
+      h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+    })(document);
+    </script>
+  </head>
+
+  
+
+  <body>
+    <div id="wrapper">
+
+    <main class="quiz outer-block">
+      <div class="inner-block">
+        <div class="quiz-content">
+          <div class="quiz-question-number" id="IDquiz-question-number">Question</div>
+          <div class="quiz-question" id="IDquiz-question">問題</div>
+          <ul class="quiz-answer">
+            <div>
+              <label class="quiz-button button01" onClick="button1()">
+                <!--<input name="radio" type="radio" value="">-->
+                <span id="quiz-text01">Answer1</span>
+              </label>
+            </div>
+            <div>
+              <label class="quiz-button button02">
+                <!--<input name="radio" type="radio" value="">-->
+                <span id="quiz-text02">Answer2</span>
+              </label>
+            </div>
+            <div>
+              <label class="quiz-button button03">
+                <!--<input name="radio" type="radio" value="">-->
+                <span id="quiz-text03">Answer3</span>
+              </label>
+            </div>
+            <div>
+              <label class="quiz-button button04">
+                <!--<input name="radio" type="radio" value="">-->
+                <span id="quiz-text04">Answer4</span>
+              </label>
+            </div>
+            <div>
+              <label class="quiz-button button05">
+                <!--<input name="radio" type="radio" value="">-->
+                <span id="quiz-text05">Answer5</span>
+              </label>
+            </div>
+            
+            <div class="quiz-rw">  </div>
+            
+          </ul>
+        </div>
+      </div>
+
+      <div class="quiz-right">  </div>
+      <div class="quiz-wrong">  </div>
+    </main>
+
+    </div><!-- /wrapper -->
+
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/common.js"></script>
+  </body>
+
+</html>
