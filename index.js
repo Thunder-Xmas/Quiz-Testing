@@ -60,7 +60,7 @@ let buf;
 let last_answer = 0;
 
 function button1(){
-  if(step<(quiz_number+3) && step>1){
+  if(step<(quiz_number+2) && step>1){
     if(document.getElementById("quiz-text01").innerHTML == last_answer){
       alert("正解！　「 "+ last_answer +" 」");
       point+=1;
