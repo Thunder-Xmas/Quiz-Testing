@@ -115,11 +115,15 @@
   transform: rotate(90deg);
 }*/
 
-.quiz-rw{
+#quiz-rw{
   position: relative;
+  text-align: center;
+  font-size: 2.5vh;
+  font-weight:bold;
 
   height: 80px;
   padding: 2vw 10vw 2vw 10vw;
+  color: #008d;
   background: #fff;
   
   
