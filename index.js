@@ -4,7 +4,7 @@ const prefecturalCapital = [
     {
       id: "01",
       question: "北海道の県庁所在地は？",
-      answer01: "札幌",/*正解の選択肢"*/
+      answer01: "札幌",/*一番上が正解の選択肢"*/
       answer02: "福島",
       answer03: "前橋",
       answer04: "秋田",
@@ -13,7 +13,7 @@ const prefecturalCapital = [
     {
       id: "02",
       question: "青森県の県庁所在地は？",
-      answer01: "青森",
+      answer01: "青森",/*正解の選択肢"*/
       answer02: "前橋",
       answer03: "秋田",
       answer04: "札幌",
@@ -22,7 +22,7 @@ const prefecturalCapital = [
     {
       id: "03",
       question: "岩手県の県庁所在地は？",
-      answer01: "盛岡",
+      answer01: "盛岡",/*正解の選択肢"*/
       answer02: "福島",
       answer03: "仙台",
       answer04: "山形",
@@ -31,7 +31,7 @@ const prefecturalCapital = [
     {
       id: "04",
       question: "宮城県の県庁所在地は？",
-      answer01: "仙台",
+      answer01: "仙台",/*正解の選択肢"*/
       answer02: "札幌",
       answer03: "前橋",
       answer04: "水戸",
@@ -40,7 +40,7 @@ const prefecturalCapital = [
     {
       id: "05",
       question: "秋田県の県庁所在地は？",
-      answer01: "秋田",
+      answer01: "秋田",/*正解の選択肢"*/
       answer02: "盛岡",
       answer03: "青森",
       answer04: "札幌",
@@ -48,19 +48,19 @@ const prefecturalCapital = [
     },
   ];
 
-let quiz_number = 5;
+let quiz_number = 5; //出題数　適宜変更
 
 let CurrentQuestionNo = 0;
 let point = 0;
 let step = 0; //0:start 1:quiz_now
-let quiz_shuffle = [0,1,2,3,4];
-let answer_shuffle = [0,1,2,3,4];
+let quiz_shuffle = [0,1,2,3,4];//出題問題のシャッフル用　出題数と同じ数の数列が必要
+let answer_shuffle = [0,1,2,3,4];//選択肢のシャッフル用
 let n2h;
 let buf;
 let last_answer = 0;
 
 function button1(){
-  if(step<(quiz_number+2) && step>1){
+  if(step<(quiz_number+2) && step>1){//ボタン１が押された時の正誤判定
     if(document.getElementById("quiz-text01").innerHTML == last_answer){
       alert("正解！　「 "+ last_answer +" 」");
       point+=1;
@@ -69,10 +69,10 @@ function button1(){
       alert("はずれ！　正解は 「 "+ last_answer +" 」");
     } 
   }
-  quizClicked();
+  quizClicked();//全ボタン共通の処理
 }
 function button2(){
-  if(step<(quiz_number+3) && step>1){
+  if(step<(quiz_number+3) && step>1){//ボタン２が押された時の正誤判定
     if(document.getElementById("quiz-text02").innerHTML == last_answer){
       alert("正解！　「 "+ last_answer +" 」");
       point+=1;
@@ -84,7 +84,7 @@ function button2(){
   quizClicked();
 }
 function button3(){
-  if(step<(quiz_number+3) && step>1){
+  if(step<(quiz_number+3) && step>1){//ボタン３が押された時の正誤判定
     if(document.getElementById("quiz-text03").innerHTML == last_answer){
       alert("正解！　「 "+ last_answer +" 」");
       point+=1;
@@ -96,7 +96,7 @@ function button3(){
   quizClicked();
 }
 function button4(){
-  if(step<(quiz_number+3) && step>1){
+  if(step<(quiz_number+3) && step>1){//ボタン４が押された時の正誤判定
     if(document.getElementById("quiz-text04").innerHTML == last_answer){
       alert("正解！　「 "+ last_answer +" 」");
       point+=1;
@@ -108,7 +108,7 @@ function button4(){
   quizClicked();
 }
 function button5(){
-  if(step<(quiz_number+3) && step>1){
+  if(step<(quiz_number+3) && step>1){//ボタン５が押された時の正誤判定
     if(document.getElementById("quiz-text05").innerHTML == last_answer){
       alert("正解！　「 "+ last_answer +" 」");
       point+=1;
